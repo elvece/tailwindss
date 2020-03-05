@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tailwindss - Contact</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
+
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
+  <script src="dist/theme.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" role="navigation">
+    <div class="container no-override">
+      <a class="navbar-brand" href="tailwindss_main.html">
+        <img data-animate="slideInLeft" src="images/tailwindss_logo.svg" class="d-none d-lg-inline mr-2 w-25">
+        Tailwind Solutions
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+                <a class="nav-link" href="tailwindss_services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tailwindss_projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="tailwindss_team.html">Team</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="tailwindss_contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="agency-contact-hero">
+  </div>
+
+  <div class="agency-contact-intro">
+    <div class="container">
+      <p>
+        For all inquiries including our services, projects, partnerships, or new business. Please ping us!
+      </p>
+    </div>
+  </div>
+
+  <div class="agency-contact-form">
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Full Name" />
+        <input type="text" placeholder="Company Name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="text" placeholder="Phone Number" />
+        <textarea placeholder="Message" rows="10"></textarea>
+        <input type="submit" value="Reach Out" />
+      </form>
+    </div>
+  </div>
+
+  <div class="agency-contact-map">
+    <div id="map"></div>
+  </div>
+
+  <div class="agency-footer mt-0">
+    <a href="#" class="go-top">
+      <i class="fa fa-angle-up"></i>
+      TOP
+    </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>About</h4>
+          <a href="#" class="legal">Services</a>
+          <a href="#" class="legal">Projects</a>
+          <a href="#" class="legal">Partnerships</a>
+        </div>
+        <div class="col-md-3">
+          <h4>Address</h4>
+          <p>
+            3201 Brighton Blvd
+            Denver, CO, 80216
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>Contact</h4>
+          <p>
+            info@tailwindss.com
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/company/tailwindss" class="social">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/tailwind-solutions" class="social">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      // Google maps
+      var mapLocation = new google.maps.LatLng(39.767789, -104.982712);
+
+      var map = new GMaps({
+        streetViewControl : false,
+        overviewMapControl: false,
+        mapTypeControl: false,
+        panControl : false,
+        scrollwheel: false,
+        center: mapLocation,
+        el: '#map',
+        zoom: 15,
+        styles: [
+        {
+          "featureType":"landscape",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":65},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"poi",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":51},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"road.highway",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"road.arterial",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":30},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"road.local",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":40},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"transit",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"administrative.province",
+          "stylers":[
+          {"visibility":"off"}
+          ]
+        },
+        {
+          "featureType":"water",
+          "elementType":"labels",
+          "stylers":[
+          {"visibility":"on"},
+          {"lightness":-25},
+          {"saturation":-100}
+          ]
+        }
+        ]
+      });
+
+      map.addMarker({
+        position: mapLocation,
+        icon: 'images/icons/map-icon.png'
+      });
+
+    });
+  </script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    // e.src='//www.google-analytics.com/analytics.js';
+    // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>

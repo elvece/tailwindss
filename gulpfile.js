@@ -9,6 +9,9 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat')
 
+// Static server
+
+
 // Styles
 gulp.task('styles', function () {
   return gulp.src('scss/theme.scss')

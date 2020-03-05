@@ -1,9 +1,9 @@
 .agency-contact-hero {
   min-height: 290px;
   position: relative;
-  background-image: url('#{$imagesPath}/graphics/hero-02.jpg');
+  background-image: url('#{$imagesPath}/custom/patryk-gradys-128898-unsplash_02.jpg');
   background-size: cover;
-  background-position: center -40px;
+  background-position: center -116px;
 
   @media(max-width: 767px) {
     background-position: center center;
@@ -101,7 +101,7 @@
     }
 
     input[type="submit"] {
-      background: linear-gradient(to bottom, #6fb1f5 0%, #3b97f7 100%);
+      background: linear-gradient(to bottom, #1a87b7 0%, #143e5c 100%);
       box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
       width: 100%;
       padding: 18px 20px;

@@ -1,7 +1,7 @@
 .agency-hero {
   min-height: 100vh;
   position: relative;
-  background-image: url('#{$imagesPath}/unsplash/michael-benz-189971.jpg');
+  background-image: url('#{$imagesPath}/unsplash/alexandre.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -47,6 +47,11 @@
     letter-spacing: 1px;
 
     @include animationDelay(.1s);
+  }
+
+  h2 {
+    color: #fff;
+    padding-bottom: 60px;
   }
 
   p {
@@ -360,7 +365,7 @@
 .agency-footer {
   margin-top: 200px;
   padding: 70px 0 90px;
-  background: #353D4D;
+  background: #324450;
   position: relative;
 
   @media(max-width: 767px) {

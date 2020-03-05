@@ -1,9 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tailwind Solutions</title>
+  <title>Tailwindss - Main</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,6 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="dist/theme.min.js"></script>
 </head>
+
 <body>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,47 +41,132 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-                <a class="nav-link" href="tailwindss_services.html">Services</a>
+            <a class="nav-link" href="tailwindss_main.html">Mission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="tailwindss_projects.html">Projects</a>
+            <a class="nav-link" href="tailwindss_exp.html">Projects</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="tailwindss_team.html">Team</a>
+            <a class="nav-link" href="tailwindss_.html">Team</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="tailwindss_contact.html">Contact</a>
+            <a class="nav-link" href="tailwindss_contact.html">Contact</a>
           </li>
         </ul>
       </div>
   </nav>
 
-  <div class="agency-hero">
+  <div class="header-hero">
     <section class="container">
-      <div class="hero-text">
-        <h1 class="customFadeInUp">
-          COMING SOON
-        </h1>
-        <p class="customFadeInUp">
-          ALL THINGS CLOUD
-          <i class="ion-android-cloud-outline"></i>
-        </p>
+      <div class="row">
+        <div class="col-offset-4 col-2">
+          <p class="h2">Propelled by</p>
+        </div>
+        <div class="col-4">
+          <h2 class="customFadeInUp">
+            <span class=rotation-animation>
+              <span class=rotation-accent>
+                Idea
+              </span>
+              <span class=rotation-accent>
+                Security
+              </span>
+              <span class=rotation-accent>
+                Project
+              </span>
+              <span class=rotation-accent>
+                Project1
+              </span>
+              <span class=rotation-accent>
+                Project2
+              </span>
+            </span>
+          </h2>
+        </div>
       </div>
     </section>
   </div>
 
+  <div class="spacial-features">
+    <section class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class=feature>
+              <h3>
+                Evaluate
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class=feature>
+              <h3>
+                Implement
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class=feature>
+              <h3>
+                Advise
+              </h3>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class=feature>
+              <img src="images/icons/spacial-download.png">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class=feature>
+              <img src="images/icons/spacial-settings.png">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class=feature>
+              <img src="images/icons/spacial-location.png">
+            </div>
+          </div>
+      </div>
+    </section>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class=feature>
+        <p class="h6">Assess current IT stature</p>
+        <p class="h6">Identify gaps in existing architecture</p>
+        <p class="h6">Scope for business requirements and objectives</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class=feature>
+        <p class="h6">Source and optimize resources</p>
+        <p class="h6">Integrate compatible solutions</p>
+        <p class="h6">Validate for operational efficiency</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class=feature>
+        <p class="h6">Guide continuous growth</p>
+        <p class="h6">Anticipate future needs</p>
+        <p class="h6">Ensure the integrity of the enterprise</p>
+      </div>
+    </div>
+</div>
+
   <script type="text/javascript">
     $(function () {
       if (!window.utils.isMobile()) {
-        $(window).scroll(function() {
+        $(window).scroll(function () {
           var scroll = $(window).scrollTop(),
-          slowScroll = scroll/4,
-          slowBg = 50 + slowScroll;
+            slowScroll = scroll / 4,
+            slowBg = 50 + slowScroll;
 
-          $('.agency-hero').css("background-position", "center " + slowBg + "%");
+          $('.header-hero').css("background-position", "center " + slowBg + "%");
         });
 
-        utils.parallax_text($(".agency-hero .hero-text"), $(".hero-text").position().top);
+        utils.parallax_text($(".header-hero .h2"), $(".hero-text").position().top);
       }
     });
   </script>
@@ -87,12 +174,15 @@
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-116138134-1','auto');ga('send','pageview');
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-116138134-1', 'auto'); ga('send', 'pageview');
   </script>
 </body>
+
 </html>
